@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="axcolorpicker_white">#ffffff</color>
+    <color name="axcolorpicker_red">#f44336</color>
+    <color name="axcolorpicker_green">#4caf50</color>
+    <color name="axcolorpicker_blue">#2196f3</color>
+    <color name="axcolorpicker_grey">#b3b3b3</color>
+    <color name="axcolorpicker_lightgrey">#d9d9d9</color>
+    <color name="axcolorpicker_dribble">#ea4c89</color>
+    <color name="axcolorpicker_dribbledark">#c32361</color>
+    <color name="axcolorpicker_black">#000000</color>
+    <color name="axcolorpicker_dialogcolor">#009688</color>
+</resources>

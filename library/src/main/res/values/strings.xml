@@ -1,0 +1,8 @@
+<resources>
+    <string name="axcolorpicker_app_name">AndroidX Color Picker</string>
+    <string name="axcolorpicker_descLib">Color Picker</string>
+    <string name="axcolorpicker_errHex">Hex Code Format incorrect</string>
+    <string name="axcolorpicker_inputColor">Color: </string>
+    <string name="axcolorpicker_btnSelectColor">Select</string>
+    <string name="axcolorpicker_hash" translatable="false">#</string>
+</resources>
