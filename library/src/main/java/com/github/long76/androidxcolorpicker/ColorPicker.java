@@ -1,4 +1,4 @@
-package com.long76.androidxcolorpicker;
+package com.github.long76.androidxcolorpicker;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -15,8 +15,8 @@ import android.widget.SeekBar;
 import androidx.annotation.ColorInt;
 import androidx.annotation.IntRange;
 
-import static com.long76.androidxcolorpicker.ColorFormatHelper.assertColorValueInRange;
-import static com.long76.androidxcolorpicker.ColorFormatHelper.formatColorValues;
+import static com.github.long76.androidxcolorpicker.ColorFormatHelper.assertColorValueInRange;
+import static com.github.long76.androidxcolorpicker.ColorFormatHelper.formatColorValues;
 
 public class ColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListener {
 

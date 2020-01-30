@@ -1,4 +1,4 @@
-package com.long76.androidxcolorpicker;
+package com.github.long76.androidxcolorpicker;
 
 import androidx.annotation.IntRange;
 

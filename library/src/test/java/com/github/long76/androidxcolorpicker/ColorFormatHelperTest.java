@@ -1,9 +1,9 @@
-package com.long76.androidxcolorpicker;
+package com.github.long76.androidxcolorpicker;
 
 import junit.framework.TestCase;
 
-import static com.long76.androidxcolorpicker.ColorFormatHelper.assertColorValueInRange;
-import static com.long76.androidxcolorpicker.ColorFormatHelper.formatColorValues;
+import static com.github.long76.androidxcolorpicker.ColorFormatHelper.assertColorValueInRange;
+import static com.github.long76.androidxcolorpicker.ColorFormatHelper.formatColorValues;
 
 public class ColorFormatHelperTest extends TestCase {
 
