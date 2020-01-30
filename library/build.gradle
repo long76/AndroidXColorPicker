@@ -58,7 +58,7 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 }
 
 task classesJar(type: Jar) {
-    from "$buildDir/intermediates/packaged-classes/release"
+    from "$buildDir/intermediates/classes/release"
 }
 
 artifacts {
