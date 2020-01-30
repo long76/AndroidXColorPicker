@@ -1,4 +1,4 @@
-package com.github.long76.androidxcolorpicker;
+package io.github.long76.androidxcolorpicker;
 
 import android.content.Context;
 import android.content.res.TypedArray;
