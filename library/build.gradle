@@ -53,15 +53,12 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     from javadoc.destinationDir
 }
 
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-
 publishing {
     publications {
         Publication(MavenPublication) {
             artifact("$buildDir/outputs/aar/library-release.aar")
+            artifact javadocJar
+            artifact sourcesJar
             groupId 'io.github.long76'
             artifactId 'androidxcolorpicker'
             version this.version
@@ -88,7 +85,6 @@ bintray {
     user = System.getenv('BINTRAY_USER')
     key = System.getenv('BINTRAY_KEY')
     publications = ['Publication']
-    configurations = ['archives']
     publish = true
     override = true
     pkg {
