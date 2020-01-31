@@ -69,15 +69,18 @@ bintray {
     key = System.getenv('BINTRAY_KEY')
     publications = ['Publication']
     configurations = ['archives']
+    publish = true
     override = true
     pkg {
         repo = 'maven'
-        name = 'androidxcolorpicker'
+        name = 'AndroidXColorPicker'
         description = 'AndroidX Color Picker'
         licenses = ['MIT']
-        publish = true
         publicDownloadNumbers = true
+        websiteUrl = 'https://github.com/long76/AndroidXColorPicker'
+        issueTrackerUrl = 'https://github.com/long76/AndroidXColorPicker/issues'
         vcsUrl = 'https://github.com/long76/AndroidXColorPicker.git'
+        githubRepo = 'long76/AndroidXColorPicker'
         version {
             name = this.version
             released  = new Date()
