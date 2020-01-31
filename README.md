@@ -1,5 +1,5 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/long76/AndroidXColorPicker)
-[![GitHub license](https://img.shields.io/github/license/long76/AndroidXColorPicker)](https://github.com/long76/AndroidXColorPicker/blob/master/LICENSE)
+![GitHub](https://img.shields.io/github/license/long76/AndroidXColorPicker)
 ![Android CI](https://github.com/long76/AndroidXColorPicker/workflows/Android%20CI/badge.svg)
 ![Bintray](https://img.shields.io/bintray/v/long76/maven/AndroidXColorPicker)
 ![Maven Central](https://img.shields.io/maven-central/v/io.github.long76/androidxcolorpicker)
