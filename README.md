@@ -1,4 +1,5 @@
 [![GitHub license](https://img.shields.io/github/license/long76/AndroidXColorPicker)](https://github.com/long76/AndroidXColorPicker/blob/master/LICENSE)
+![Android CI](https://github.com/long76/AndroidXColorPicker/workflows/Android%20CI/badge.svg)
 # AndroidXColorPicker
 Color Picker based on [repo](https://github.com/Pes8/android-material-color-picker-dialog) and updated to AndroidX.
 
