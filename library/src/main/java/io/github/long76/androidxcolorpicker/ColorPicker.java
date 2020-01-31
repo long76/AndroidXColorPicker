@@ -188,19 +188,6 @@ public class ColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListen
         okButton.setOnClickListener(view -> sendColor());
     }
 
-    @Override
-    public void onDetachedFromWindow() {
-        context = null;
-        colorView = null;
-        alphaSeekBar = null;
-        redSeekBar = null;
-        greenSeekBar = null;
-        blueSeekBar = null;
-        hexCode = null;
-        okButton = null;
-        super.onDetachedFromWindow();
-    }
-
     private void initUi() {
         colorView.setBackgroundColor(getColor());
 
