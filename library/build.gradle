@@ -112,7 +112,6 @@ bintray {
     pkg {
         repo = 'maven'
         name = 'AndroidXColorPicker'
-        description = 'AndroidX Color Picker'
         licenses = ['MIT']
         publicDownloadNumbers = true
         websiteUrl = 'https://github.com/long76/AndroidXColorPicker'
