@@ -80,6 +80,8 @@
             android:layout_marginEnd="4dp"
             android:labelFor="@id/hexCode"
             android:text="@string/axcolorpicker_hash"
+            android:textColor="@android:color/primary_text_light"
+            android:textColorHint="@android:color/primary_text_light"
             android:textSize="18sp"/>
 
         <EditText

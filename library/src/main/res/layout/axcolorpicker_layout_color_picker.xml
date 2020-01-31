@@ -76,6 +76,8 @@
                 android:layout_alignEnd="@+id/hexCode"
                 android:layout_alignParentStart="true"
                 android:labelFor="@id/hexCode"
+                android:textColor="@android:color/primary_text_light"
+                android:textColorHint="@android:color/primary_text_light"
                 android:text="@string/axcolorpicker_hash"/>
 
         <EditText
