@@ -1,8 +1,13 @@
 # AndroidXColorPicker
-Color Picker based on [repo](https://github.com/Pes8/android-material-color-picker-dialog) and updated to Androidx.
+Color Picker based on [repo](https://github.com/Pes8/android-material-color-picker-dialog) and updated to AndroidX.
 
 # Usage
 
+**Requirements**
+
+minSdkVersion `21`
+
+**build.gradle**
 ```groovy
 implementation 'io.github.long76:androidxcolorpicker:1.4'
 ```
