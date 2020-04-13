@@ -13,7 +13,7 @@ import androidx.annotation.Dimension;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatSeekBar;
 
-class AndroidXColorPickerSeekBar extends AppCompatSeekBar {
+class AXColorPickerSeekBar extends AppCompatSeekBar {
 
     private Paint textPaint;
     private Rect textRect;
@@ -26,17 +26,17 @@ class AndroidXColorPickerSeekBar extends AppCompatSeekBar {
 
     private String text;
 
-    public AndroidXColorPickerSeekBar(Context context) {
+    public AXColorPickerSeekBar(Context context) {
         super(context);
         init(null);
     }
 
-    public AndroidXColorPickerSeekBar(Context context, AttributeSet attrs) {
+    public AXColorPickerSeekBar(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs);
     }
 
-    public AndroidXColorPickerSeekBar(Context context, AttributeSet attrs, int defStyleAttr) {
+    public AXColorPickerSeekBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs);
     }
@@ -46,33 +46,26 @@ class AndroidXColorPickerSeekBar extends AppCompatSeekBar {
         textRect = new Rect();
 
         if (attrs != null) {
-
             final TypedArray typedArray = getContext().obtainStyledAttributes(
-                    attrs, R.styleable.axcolorpicker_AndroidXColorPickerSeekBar
+                    attrs, R.styleable.AXColorPickerSeekBar
             );
 
             try {
-
                 textColor = typedArray.getColor(
-                        R.styleable.axcolorpicker_AndroidXColorPickerSeekBar_android_textColor,
+                        R.styleable.AXColorPickerSeekBar_android_textColor,
                         0xff000000
                 );
 
                 textSize = typedArray.getDimension(
-                        R.styleable.axcolorpicker_AndroidXColorPickerSeekBar_android_textSize,
+                        R.styleable.AXColorPickerSeekBar_android_textSize,
                         TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
                                 18, getResources().getDisplayMetrics())
                 );
 
-                text = typedArray.getString(R.styleable
-                        .axcolorpicker_AndroidXColorPickerSeekBar_android_text);
-
+                text = typedArray.getString(R.styleable.AXColorPickerSeekBar_android_text);
             } finally {
-
                 typedArray.recycle();
-
             }
-
         }
 
         textPaint.setColor(textColor);
@@ -105,6 +98,5 @@ class AndroidXColorPickerSeekBar extends AppCompatSeekBar {
                 textRect.height() + (getPaddingTop() >> 2),
                 textPaint
         );
-
     }
 }

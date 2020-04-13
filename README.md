@@ -14,11 +14,47 @@ minSdkVersion `21`
 
 **build.gradle**
 ```groovy
-implementation 'io.github.long76:androidxcolorpicker:1.4'
+implementation 'io.github.long76:androidxcolorpicker:2.0'
+```
+
+# Features
+
+* Color Picker Dialog
+* Color Picker Preference
+
+# Example
+
+Color Picker Dialog
+
+```java
+AXColorPicker colorPicker = new AXColorPicker(context);
+colorPicker.setColor(Color.BLACK);
+colorPicker.setAutoClose(true);
+colorPicker.setOnColorChosenListener(color -> {
+             Timber.d("Color %d choosen", color);
+         });
+colorPicker.show();
+```
+
+Color Picker Preference
+
+**settings.xml**
+```xml
+<io.github.long76.androidxcolorpicker.AXColorPickerPreference
+    app:AXColorPickerPrefName="preferences"
+    app:AXColorPickerPrefNameTextColor="TextColor"
+    app:AXColorPickerPrefNameBackgroundColor="ElementColor"
+    app:key="TextColor"
+    app:summary="Select color text"
+    app:title="Color text"
+    app:defaultValue="@color/colorText">
+</io.github.long76.androidxcolorpicker.AXColorPickerPreference>
 ```
 
 # License
 MIT License
+
+Copyright (c) 2017 Simone Pessotto (http://www.simonepessotto.it)
 
 Copyright (c) 2020 long76
 

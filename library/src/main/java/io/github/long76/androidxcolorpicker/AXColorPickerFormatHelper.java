@@ -2,7 +2,7 @@ package io.github.long76.androidxcolorpicker;
 
 import androidx.annotation.IntRange;
 
-final class ColorFormatHelper {
+final class AXColorPickerFormatHelper {
 
     /**
      * Checks whether the specified value is between (including bounds) 0 and 255

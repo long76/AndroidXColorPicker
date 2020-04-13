@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <declare-styleable name="axcolorpicker_AndroidXColorPickerSeekBar">
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <declare-styleable name="AXColorPickerSeekBar">
         <attr name="android:text"/>
         <attr name="android:textColor"/>
         <attr name="android:textSize"/>
+    </declare-styleable>
+    <declare-styleable name="AXColorPickerPreference">
+        <attr name="AXColorPickerAlphaEnabled" format="boolean"/>
+        <attr name="AXColorPickerTextSize" format="float"/>
+        <attr name="AXColorPickerTextColor" format="color"/>
+        <attr name="AXColorPickerBackgroundColor" format="color"/>
+        <attr name="AXColorPickerText" format="string"/>
+        <attr name="AXColorPickerPrefName" format="string"/>
+        <attr name="AXColorPickerPrefNameTextColor" format="string"/>
+        <attr name="AXColorPickerPrefNameBackgroundColor" format="string"/>
     </declare-styleable>
 </resources>
