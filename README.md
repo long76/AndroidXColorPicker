@@ -1,28 +1,30 @@
+# AndroidXColorPicker
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/long76/AndroidXColorPicker)
 ![GitHub](https://img.shields.io/github/license/long76/AndroidXColorPicker)
 ![Android CI](https://github.com/long76/AndroidXColorPicker/workflows/Android%20CI/badge.svg)
-![Bintray](https://img.shields.io/bintray/v/long76/maven/AndroidXColorPicker)
 ![Maven Central](https://img.shields.io/maven-central/v/io.github.long76/androidxcolorpicker)
-# AndroidXColorPicker
+
 Color Picker based on [repo](https://github.com/Pes8/android-material-color-picker-dialog) and updated to AndroidX.
 
-# Usage
+## Usage
 
-**Requirements**
+### Requirements
 
 minSdkVersion `21`
 
-**build.gradle**
+### build.gradle
+
 ```groovy
-implementation 'io.github.long76:androidxcolorpicker:2.0'
+implementation 'io.github.long76:androidxcolorpicker:3.0'
 ```
 
-# Features
+## Features
 
 * Color Picker Dialog
 * Color Picker Preference
 
-# Example
+## Example
 
 Color Picker Dialog
 
@@ -38,7 +40,8 @@ colorPicker.show();
 
 Color Picker Preference
 
-**settings.xml**
+### settings.xml
+
 ```xml
 <io.github.long76.androidxcolorpicker.AXColorPickerPreference
     app:AXColorPickerPrefName="preferences"
@@ -51,10 +54,11 @@ Color Picker Preference
 </io.github.long76.androidxcolorpicker.AXColorPickerPreference>
 ```
 
-# License
+## License
+
 MIT License
 
-Copyright (c) 2017 Simone Pessotto (http://www.simonepessotto.it)
+Copyright (c) 2017 Simone Pessotto (<http://www.simonepessotto.it>)
 
 Copyright (c) 2020 long76
 

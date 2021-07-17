@@ -1,16 +1,16 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
+apply plugin: 'signing'
 
-version = '2.0'
+version = '3.0'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     resourcePrefix 'axcolorpicker_'
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName version
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -38,12 +38,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.preference:preference:1.1.0'
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
 }
 
 task sourcesJar(type: Jar) {
@@ -56,9 +56,17 @@ task javadocJar(type: Jar, dependsOn: 'releaseJavadoc') {
     from "$buildDir/docs/javadoc/"
 }
 
+artifacts {
+    archives javadocJar, sourcesJar
+}
+
+signing {
+    sign configurations.archives
+}
+
 publishing {
     publications {
-        mvnBintray(MavenPublication) {
+        mvnCentral(MavenPublication) {
             artifact("$buildDir/outputs/aar/library-release.aar")
             artifact javadocJar
             artifact sourcesJar
@@ -103,29 +111,6 @@ publishing {
                     }
                 }
             }
-        }
-    }
-}
-
-bintray {
-    user = System.getenv('BINTRAY_USER')
-    key = System.getenv('BINTRAY_KEY')
-    publications = ['mvnBintray']
-    publish = true
-    override = true
-    pkg {
-        repo = 'maven'
-        name = 'AndroidXColorPicker'
-        licenses = ['MIT']
-        publicDownloadNumbers = true
-        websiteUrl = 'https://github.com/long76/AndroidXColorPicker'
-        issueTrackerUrl = 'https://github.com/long76/AndroidXColorPicker/issues'
-        vcsUrl = 'https://github.com/long76/AndroidXColorPicker.git'
-        githubRepo = 'long76/AndroidXColorPicker'
-        version {
-            name = this.version
-            released = new Date()
-            vcsTag = this.version
         }
     }
 }
