@@ -56,14 +56,6 @@ task javadocJar(type: Jar, dependsOn: 'releaseJavadoc') {
     from "$buildDir/docs/javadoc/"
 }
 
-artifacts {
-    archives javadocJar, sourcesJar
-}
-
-signing {
-    sign configurations.archives
-}
-
 publishing {
     publications {
         mvnCentral(MavenPublication) {
@@ -113,4 +105,17 @@ publishing {
             }
         }
     }
+    repositories {
+        maven {
+            url = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
+            credentials {
+                username = ossrhUsername
+                password = ossrhPassword
+            }
+        }
+    }
+}
+
+signing {
+    sign publishing.publications.mvnCentral
 }
