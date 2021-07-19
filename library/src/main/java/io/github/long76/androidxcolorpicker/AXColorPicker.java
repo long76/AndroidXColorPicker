@@ -9,26 +9,28 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.SeekBar;
+
 import androidx.annotation.ColorInt;
 import androidx.annotation.Dimension;
 import androidx.annotation.IntRange;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatSeekBar;
 
 import static io.github.long76.androidxcolorpicker.AXColorPickerFormatHelper.assertColorValueInRange;
 import static io.github.long76.androidxcolorpicker.AXColorPickerFormatHelper.formatColorValues;
 
-public class AXColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListener {
+public class AXColorPicker extends Dialog implements AppCompatSeekBar.OnSeekBarChangeListener {
 
     private final Context context;
 
     private View colorView = null;
-    private SeekBar alphaSeekBar = null;
-    private SeekBar redSeekBar = null;
-    private SeekBar greenSeekBar = null;
-    private SeekBar blueSeekBar = null;
-    private EditText hexCode = null;
+    private AppCompatSeekBar alphaSeekBar = null;
+    private AppCompatSeekBar redSeekBar = null;
+    private AppCompatSeekBar greenSeekBar = null;
+    private AppCompatSeekBar blueSeekBar = null;
+    private AppCompatEditText hexCode = null;
     private String text = null;
     private AXColorPickerCallback callback = null;
     private boolean ARGBFormat;
@@ -220,7 +222,7 @@ public class AXColorPicker extends Dialog implements SeekBar.OnSeekBarChangeList
         colorView = findViewById(R.id.colorView);
 
         hexCode = findViewById(R.id.hexCode);
-        Button okButton = findViewById(R.id.okColorButton);
+        AppCompatButton okButton = findViewById(R.id.okColorButton);
 
         if (text != null) {
             okButton.setText(text);

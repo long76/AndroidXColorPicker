@@ -71,7 +71,7 @@
                 android:textColor="@android:color/holo_blue_light"
                 android:thumb="@drawable/axcolorpicker_blue_thumb_drawable"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                 android:textColorHint="@android:color/primary_text_light"
                 android:text="@string/axcolorpicker_hash"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
                 tools:ignore="Autofill"
                 android:id="@id/hexCode"
                 style="@style/Widget.AppCompat.EditText"
@@ -107,7 +107,7 @@
                 tools:text="123456"
                 android:focusable="true"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/okColorButton"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"

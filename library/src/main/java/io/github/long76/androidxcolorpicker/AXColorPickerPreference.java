@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 import androidx.annotation.ColorInt;
 import androidx.annotation.Dimension;
 import androidx.preference.Preference;
