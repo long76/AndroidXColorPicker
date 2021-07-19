@@ -2,7 +2,7 @@
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/long76/AndroidXColorPicker)
 ![GitHub](https://img.shields.io/github/license/long76/AndroidXColorPicker)
-![Android CI](https://github.com/long76/AndroidXColorPicker/workflows/Android%20CI/badge.svg)
+[![Android CI](https://github.com/long76/AndroidXColorPicker/actions/workflows/android.yml/badge.svg)](https://github.com/long76/AndroidXColorPicker/actions/workflows/android.yml)
 ![Maven Central](https://img.shields.io/maven-central/v/io.github.long76/androidxcolorpicker)
 
 Color Picker based on [repo](https://github.com/Pes8/android-material-color-picker-dialog) and updated to AndroidX.
