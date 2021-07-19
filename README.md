@@ -16,7 +16,7 @@ minSdkVersion `21`
 ### build.gradle
 
 ```groovy
-implementation 'io.github.long76:androidxcolorpicker:3.0'
+implementation 'io.github.long76:androidxcolorpicker:3.1'
 ```
 
 ## Features
